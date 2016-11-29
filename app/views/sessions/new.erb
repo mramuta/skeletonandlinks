@@ -1,0 +1,11 @@
+<div class="login">
+  <h4>Login</h4>
+  <% if @invalid_login%>
+    <%= erb :_errors,:locals => {errors: [@invalid_login]}%>
+  <%end%>
+  <form action="/sessions" method="post" >
+  	<input type="text" name="username" placeholder="username">
+  	<input type="text" name="password" placeholder="password">
+  	<button type="submit">login</button>
+  </form>
+</div>

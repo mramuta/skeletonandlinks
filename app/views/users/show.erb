@@ -1,0 +1,10 @@
+<h1><%=@user.username%> Posts</h1>
+<ul>
+  <%@entries = @user.entries%>
+  <%@entries.each do |entry|%>
+    <li>
+      <a href="/entries/<%=entry.id%>"><%=entry.title%></a>
+      <p>Posted: <%=entry.created_at%> By: <a href="/users/<%=entry.author.id%>/entries"><%=entry.author.username%></a>  </p>
+    </li>
+  <%end%>
+</ul>

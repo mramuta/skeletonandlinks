@@ -1,0 +1,20 @@
+u = User.new
+e = Entry.new
+ts = Tagging.new
+c = Comment.new
+t = Tag.new
+
+TODO
+
+users
+new.erb
+show.erb
+
+sessions view folder
+_new.erb
+
+tags view folder
+index.erb
+show.erb
+_tag.erb
+
